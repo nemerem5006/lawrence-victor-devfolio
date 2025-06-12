@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html" class="text-xl font-bold hover:text-gray-300">Lawrence Victor Chinemerem</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="py-2 px-3 hover:bg-gray-700 rounded">Home</a>
+                    <a href="about.html" class="py-2 px-3 hover:bg-gray-700 rounded">About</a>
+                    <a href="projects.html" class="py-2 px-3 bg-gray-700 rounded">Projects</a>
+                    <a href="contact.html" class="py-2 px-3 hover:bg-gray-700 rounded">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm bg-gray-700 hover:bg-gray-700">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8 flex-grow">
+        <section class="bg-white shadow-md rounded-lg p-6 md:p-10">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">My Projects</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div id="project1" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./assets/images/lemonwares-logo.png" alt="LemonWares" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">LemonWares</h3>
+                        <p class="text-gray-600 text-sm mb-4">Premium Web Hosting For Your Website.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Code &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div id="project2" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./assets/images/Pavillon.jpg" alt="Pavillon" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Pavillon</h3>
+                        <p class="text-gray-600 text-sm mb-4">Unlock your professional potential.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Code &rarr;</a>
+                    </div>
+                </div>
+                <div id="project2" class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <img src="./assets/images/Intolerencnelab.png" alt="Intolerencelab" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-2">Intolerencelab</h3>
+                        <p class="text-gray-600 text-sm mb-4">Eliminate your food intolerance.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">View Code &rarr;</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-auto">
+        <p>&copy; <span id="currentYear"></span> Lawrence Victor Chinemerem. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

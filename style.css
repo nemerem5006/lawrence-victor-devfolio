@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can go here if needed */
+/* For example, to ensure the sticky nav doesn't cause layout jumps with main content */
+body {
+    /* padding-top: 4rem; /* Adjust if nav height is fixed and different */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Devfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div>
+                    <a href="index.html" class="text-xl font-bold hover:text-gray-300">Lawrence Victor Chinemerem</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="py-2 px-3 bg-gray-700 rounded">Home</a>
+                    <a href="about.html" class="py-2 px-3 hover:bg-gray-700 rounded">About</a>
+                    <a href="projects.html" class="py-2 px-3 hover:bg-gray-700 rounded">Projects</a>
+                    <a href="contact.html" class="py-2 px-3 hover:bg-gray-700 rounded">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <a href="index.html" class="block py-2 px-4 text-sm bg-gray-700 hover:bg-gray-700">Home</a>
+            <a href="about.html" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="projects.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="contact.html" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-4 md:p-8 flex-grow">
+        <!-- Hero Section -->
+        <section class="text-center py-12 md:py-20 bg-white shadow-md rounded-lg">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Welcome to My Devfolio</h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-8">I'm a [Your Profession/Frontend Web Developer] passionate about creating amazing digital experiences.</p>
+            <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">View My Work</a>
+            <a href="contact.html" class="ml-4 bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">Get In Touch</a>
+        </section>
+
+        <!-- About Preview Section -->
+        <section class="py-12 md:py-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">A Little About Me</h2>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Hello! I'm [Lawrence Victor Chinemerem], a [Your Profession/Frontend Web Developer] with a knack for [HTML, Tailwindcss, Javascript].
+                    I enjoy turning complex problems into simple, beautiful, and intuitive designs/solutions.
+                </p>
+                <div class="text-center">
+                    <a href="about.html" class="text-blue-600 hover:text-blue-800 font-semibold">Read More About Me &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Preview -->
+        <section class="py-12 md:py-16 bg-gray-50 rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">LemonWares</h3>
+                    <p class="text-gray-600 text-sm mb-4">Premium Web Hosting For Your Website</p>
+                    <a href="projects.html#project1" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Pavillon</h3>
+                    <p class="text-gray-600 text-sm mb-4">Unlock your professional potential</p>
+                    <a href="projects.html#project2" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Intolerencnelab</h3>
+                    <p class="text-gray-600 text-sm mb-4">Eliminate your food intolerance</p>
+                    <a href="projects.html#project2" class="text-blue-600 hover:text-blue-800 font-medium">View Details &rarr;</a>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="projects.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">See All Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center p-6 mt-auto">
+        <p>&copy; <span id="currentYear"></span> Lawrence Victor Chinemerem. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
